@@ -102,6 +102,26 @@
                 android:layout_gravity="center_horizontal"
                 android:scaleType="centerCrop"
                 android:id="@+id/product_cover_img"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Product Image"
+                android:textAllCaps="false"
+                android:id="@+id/product_img_btn"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                tools:listitem="@layout/image_item"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:id="@+id/product_img_recycler_view"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Product"
+                android:textAllCaps="false"
+                android:id="@+id/submit_product_btn"/>
 
         </LinearLayout>
     </ScrollView>
